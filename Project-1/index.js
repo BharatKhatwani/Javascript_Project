@@ -1,14 +1,16 @@
 var addButton = document.querySelector("#add");
 var nameElement = document.querySelector("h5");
-var removeButton = document.querySelector('#remove')
+
+let count = 0;
 
 addButton.addEventListener("click", function() {
-    nameElement.innerHTML = 'Friends';
-    newElement.style.color = "green";
-});
-
-
-removeButton.addEventListener("click", function() {
-    nameElement.innerHTML = 'Stranges';
-    newElement.style.color = 'red';
+    if(count == 0) {
+        nameElement.innerHTML = 'Friends';
+        nameElement.style.color = "green";
+        count = 1;
+    } else {
+        nameElement.innerHTML = 'Strangers';
+        nameElement.style.color = 'red';
+        count = 0;
+    }
 });

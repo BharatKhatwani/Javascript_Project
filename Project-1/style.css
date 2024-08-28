@@ -55,7 +55,7 @@ padding-left: 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
+    margin-left: 50px;
 }
 .card  #remove {
     background-color: #dadada;
